@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Welcome</h1>
+          <p>Search your movies or series here :</p>
+          <div class="input-group">
+            <input value="" type="search" id="searchBar" class="form-control rounded" placeholder="Search movies" aria-label="Search"
+              aria-describedby="search-addon" />
+            <button type="button" class="btn btn-dark" onclick="searchMovie();">search</button>
+          </div>
+          <div id="resultBoard" class="card-columns">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+img {
+  height: 400px;
+  width: 280px;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.card {
+  margin: 10px;
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+.card.not-visible {
+  opacity: 0;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* modal */
+.lockBg {
+  background-color: rgba(0, 0, 0, 0.89);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.myModal {
+  padding: 10px;
+  border-radius: 1em;
+  display: block;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.lockBg.active {
+  visibility: visible;
+}
